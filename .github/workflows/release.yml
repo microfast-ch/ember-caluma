@@ -16,11 +16,13 @@ jobs:
           - "@projectcaluma/ember-form-builder"
           - "@projectcaluma/ember-testing"
           - "@projectcaluma/ember-workflow"
+          # uncomment if first release is ready
+          # - "@projectcaluma/ember-distribution"
 
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: "master"
+          ref: "main"
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@v2
